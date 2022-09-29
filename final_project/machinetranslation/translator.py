@@ -16,7 +16,6 @@ def connect_2_translator():
     language_translator = LanguageTranslatorV3( version='2018-05-01', authenticator=authenticator)
     language_translator.set_service_url( url )
     language_translator.set_disable_ssl_verification(True)
-
     return language_translator
 
 def english_to_french(english_text):
